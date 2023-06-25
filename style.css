@@ -1,0 +1,251 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.hover:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+header{
+  width: 100%;
+  position: absolute;
+}
+.first-header{
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo{
+  width: 185px;
+  margin: 30px 35px 0px 35px;
+}
+.header-right ul{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.head-list a{
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 25px 10px 22px;
+  line-height: 1.2;
+  color: #000;
+}
+.head-list a > span{
+  font-weight: normal;
+  font-size: 7px;
+}
+.counseling-btn a{
+  color: #fff;
+  font-size: 10px;
+}
+.button{
+  background-color: #f79214;
+  border:none;
+  border-radius: 38px;
+}
+
+.nav{
+  width:100%;
+  text-align: center;
+  display: none;
+}
+.nav-toggle > span{
+  display: inline-block;
+  transition: all .4s;
+  margin-top: 8px;
+  position: absolute;
+  right: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 30px;
+}
+.nav-toggle > span:nth-of-type(1) {
+  top:13px; 
+}
+.nav-toggle > span:nth-of-type(2) {
+  top:23px; 
+}
+.nav-toggle > span:nth-of-type(3) {
+  top:33px; 
+}
+.nav-toggle.active > span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.nav-toggle.active > span:nth-of-type(2) {
+  opacity: 0;
+}
+.nav-toggle.active > span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.main-header{
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.responsive-image{
+  display: none;
+}
+.header-container{
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.header-contents{
+  width: 65%;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.header-contents h2{
+  font-size: 37px;
+ 
+}
+.content{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.content img{
+  width: 27%;
+}
+.content img:nth-child(2){
+  width: 40%;
+}
+.counseling-button{
+  font-size: 16px;
+  padding: 20px 50px;
+  margin-right: 11px;
+}
+.document-request-button{
+  background-color: #fff;
+  border:0.5px solid #a2a2a4;
+  font-size: 16px;
+  padding: 20px 23px;
+}
+.document-request-button a{
+  color: #000;
+}
+.notes{
+  margin-left: 80px;
+  position: relative;
+}
+.note p{
+  width: 100%;
+  color: #a2a2a4;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+.about-container{
+  width: 100%;
+  background-color: #f79214;
+  padding:44px 0;
+} 
+.about{
+  display: flex;
+  max-width: 1140px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-content{
+  width: 60%;
+}
+.about-text{
+  padding-left: 25px;
+}
+.about-text h3{
+  color: #fff;
+  font-size: 35px;
+  
+}
+.about-text p{
+  color: #fff;
+  font-size: 16px;
+}
+.about-text a{
+  font-size: 18px;
+}
+
+@media(max-width: 1080px){
+  .header-right{
+    display: none;
+  }
+  .nav{
+    display: block;
+  }
+  header{
+    height: 62px;
+    background-color: #fff;
+  }
+  .first-header{
+    margin: 0 30px 40px 0px;
+  }
+  .about{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 768px){
+  header{
+    height: 50px;
+  }
+  .header-logo{
+    width: 155px;
+    margin: 25px 15px 15px 20px;
+  }
+  .main-header{
+    background-image: none;
+  }
+  .responsive-image{
+    display: block;
+    width: 100%;
+    padding-top: 62px;
+  }
+  .header-container{
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-contents{
+    width: auto;
+  }
+  .header-contents h2{
+    font-size: 25px;
+  }
+  .content{
+    width: 80%;
+  }
+  .document-request-button{
+    display: none;
+  }
+  .notes{
+    margin: auto;
+  }
+}
